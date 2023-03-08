@@ -3,6 +3,8 @@ import User from "./user";
 
 // export async function generateStaticParams() {
 //   const { users } = await getUsers()
+//   console.log(users);
+  
 // // @ts-ignore
 //   return users.map(user => ({
 //     userId: user.id
