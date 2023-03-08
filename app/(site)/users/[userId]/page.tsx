@@ -1,13 +1,13 @@
 import { getUserById, getUsers } from "@/lib/prisma/users";
 import User from "./user";
 
-// export async function generateStaticParams() {
-//   const { users } = await getUsers()
-
-//   return users.map(user => ({
-//     userId: user.id
-//   }))
-// }
+export async function generateStaticParams() {
+  const { users } = await getUsers()
+// @ts-ignore
+  return users.map(user => ({
+    userId: user.id
+  }))
+}
 
 type UserProps = {
   params: {
