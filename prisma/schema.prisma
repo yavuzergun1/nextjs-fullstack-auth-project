@@ -16,7 +16,7 @@ model User {
   email         String?   @unique
   name          String?
   imageUrl      String?
-
+  tweets        Tweet[]
 }
 
 model Tweet {

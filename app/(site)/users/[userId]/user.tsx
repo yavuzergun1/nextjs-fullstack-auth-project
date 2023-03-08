@@ -1,5 +1,5 @@
 import Image from "next/image";
-// import Tweet from "./tweet";
+import Tweet from "./tweet";
 
 type UserProps = {
   user: {
@@ -45,11 +45,12 @@ const User = ({ user }: any) => {
         <h2 className="text-2xl font-semibold tracking-tight text-stone-600">
           Recent Tweets
         </h2>
-        {/* <ul>
+        <ul>
+          {/* @ts-ignore */}
           {user.tweets.map((tweet) => (
             <Tweet key={tweet.id} tweet={tweet} />
           ))}
-        </ul> */}
+        </ul>
       </div>
     </section>
   );
