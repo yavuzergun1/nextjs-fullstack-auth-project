@@ -9,6 +9,7 @@ export const revalidate = 0;
 
 async function getData() {
   const { users } = await getUsers();
+  
   if (!users) {
     throw new Error("Failed to fetch data");
   }
