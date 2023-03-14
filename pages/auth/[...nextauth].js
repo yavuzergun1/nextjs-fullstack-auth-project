@@ -11,7 +11,6 @@ export default async function auth(req, res) {
         clientSecret: process.env.GOOGLE_CLIENT_SECRET,
       }),
     ],
-
     pages: {
       signIn: "/signin",
     },

@@ -1,12 +1,13 @@
-import Button from "app/components/ui/button";
-import TextField from "app/components/form/TextField";
-import GoogleLoginButton from "app/components/auth/GoogleSignInButton";
+import Button from "../../components/ui/button";
+import TextField from "../../components/form/TextField";
+import GoogleLoginButton from "../../components/auth/GoogleSignInButton";
 
 const SignInPage = () => {
   return (
     <>
       <form>
         <div className="space-y-2">
+          {/* @ts-ignore */}
           <TextField
             id="email"
             name="email"
@@ -17,6 +18,7 @@ const SignInPage = () => {
             required
           />
         </div>
+        {/* @ts-ignore */}
         <Button
           type="submit"
           variant="outline"

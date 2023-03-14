@@ -2,6 +2,7 @@ import "../../styles/globals.css";
 import Header from "./header";
 import Footer from "./footer";
 import Head from "./head";
+import Provider from "./Provider";
 
 export const metadata = {
   title: "Next.js",
@@ -17,9 +18,11 @@ export default function RootLayout({
     <html lang="en">
       <Head />
       <body className="flex flex-col">
-        <Header />
-        <main className="grow h-screen">{children}</main>
-        <Footer />
+        <Provider>
+          <Header />
+          <main className="grow h-screen">{children}</main>
+          <Footer />
+        </Provider>
       </body>
     </html>
   );
