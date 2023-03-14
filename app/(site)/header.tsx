@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-// import LoginButton from "../components/auth/SignInButton";
+import LoginButton from "../components/auth/SignInButton";
 
 const Header = () => {
   return (
@@ -17,7 +17,7 @@ const Header = () => {
         </ul>
         <ul className="ml-auto">
           <li>
-            {/* <LoginButton /> */}
+            <LoginButton />
           </li>
         </ul>
       </nav>
